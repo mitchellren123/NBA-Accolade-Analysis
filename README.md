@@ -22,4 +22,29 @@ I next sought to understand how the dataset's features related to the target var
 
 ### Data Pre-Processing
 
+I took the following data cleaning steps to prepare for modeling:
+- Removed special characters from player names
+- Replaced Team = "TOT" or Total rows with most recent team names for players traded mid-season
+- Mapped team name abbreviations accordingly to enable table joining
+- Joined seasonal player tables with seasonal team tables with season MVP and DPOY voting tables
+- One-Hot-Encoded categorical variables
+- Replaced continuous variable null values with 0s after further exploration
+- Created new, categorical target variables based on "Rank-MVP" and "Rank-DPOY"
+
+With my newly-cleaned dataset, I conductd Exploratory Data Analysis (EDA) to get a better sense for trends in the data. My EDA included plotting time series graphs, measures of central tendancy (box-and-whisker), and scatter plots.
+
+[INSERT EDA GRAPH SAMPLES HERE]
+
+### Modeling Approach
+
+I started my modeling process by splitting the cleaned dataset into Train and Test sets. For my baseline model - I built a multli-class Decision Tree Classifier that produced a Train Accuracy score of 100% and a Test Accuracy Score of 65% which suggested overfitting. Within the Test set classification report, I also noticed that the model performed much better on the majority class than the minority classes due to class imbalance. 
+
+I took the following steps to iterate on my baseline model:
+- Conducted SMOTE resampling to address class imbalance
+- Incorporated hyperparameter tuning to address overfitting
+- Changed dataset from multi-class to binary
+- Tested Random Forest Classifiers and compared performance to that of Decision Tree Classifiers
+
+
+### Modeling Results
 
