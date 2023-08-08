@@ -48,3 +48,40 @@ I took the following steps to iterate on my baseline model:
 
 ### Modeling Results
 
+MVP Voting Predictions:
+* Baseline multi-class DTC: Test Macro Average Accuracy = 65%
+* Multi-class DTC with SMOTE Resampling: Test Macro Average Accuracy = 70%
+* Multi-class DTC with SMOTE Resampling and Hyperparameter Tuning: Test Macro Average Accuracy = 71%
+* Multi-class RFC with SMOTE Resampling and Hyperparameter Tuning: Test Macro Average Accuracy = 74%
+* Binary RFC with SMOTE Resampling and Hyperparameter Tuning: Test Macro Average Accuracy = 83%
+
+[INSERT CONFUSION MATRIX HERE]
+
+DPOY Voting Predictions:
+* Binary RFC with SMOTE Resampling and Hyperparameter Tuning: Test Macro Average Accuracy = 71%
+
+[INSERT CONFUSION MATRIX HERE]
+
+### Conclusion
+
+Ultimately I was able to produce the best predictive classification results with the Binary Random Forest Classifier with SMOTE resampling and hyperparameter tuning. This model showed the best balance in prediction scores between classes, although it still performed much better on the majority class than it did on the minority class. This is to be expected though, and is the nature of making predictions on hundreds of players in a season with only very few award votes.
+
+My model also revealed the following to be the 5 most important features for predicting MVP voting:
+- Value Over Replacement Player (VORP)
+- Player Efficiency Rating (PER)
+- Box Plus Minus (BPM)
+- Win Shares (WS)
+- Free Throw Attemps (FTA)
+
+It revealed the following for DPOY voting:
+- Defensive Win Share (DWS)
+- Value Over Replacement Player (VORP)
+- Defensive Box Plus Minus (DBPM)
+- Win Shares (WS)
+- Games Started (GS)
+
+Although there is some overlap between the two models in top 5 feature importances, we do start to see more distinction within the top 10, 15, and 20. 
+
+My recommendation to the NBA is to use both predictions and feature importances from these two models to form the basis of its objective voting criteria. With a more concrete statistical framework in place for each yearly accolade, the NBA can provide more transparency to fans, players, and media about which players should be considered for each award and why. Media voting members can then overlay narrative distinctions to supplement the statistical analysis.
+
+In addition to solidifying objective criteria, the NBA also has an opportunity to define subjective criteria. For example players coming back from serious injuries, players who demonstrated outstanding leadership qualities, etc. Maintaining some level of subjectivity but more clearly defining the criteria will keep yearly voting fun and interesting. My belief is that fans are interested in both stats and narrative at the end of the day.
