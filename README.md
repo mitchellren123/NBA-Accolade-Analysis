@@ -37,11 +37,9 @@ With my newly-cleaned dataset, I conductd Exploratory Data Analysis (EDA) to get
 
 ![graph2](./Images/DPOY_DWS_timeseries.png)
 
-![graph3](./Images/DPOY_DWS_timeseries.png)
+![graph3](./Images/MVP_1991_scatter.png)
 
-![graph4](./Images/MVP_1991_scatter.png)
-
-![graph5](./Images/MVP_PER_boxandwhisker.png)
+![graph4](./Images/MVP_PER_boxandwhisker.png)
 
 
 
@@ -65,12 +63,12 @@ MVP Voting Predictions:
 * Multi-class RFC with SMOTE Resampling and Hyperparameter Tuning: Test Macro Average Accuracy = 74%
 * Binary RFC with SMOTE Resampling and Hyperparameter Tuning: Test Macro Average Accuracy = 83%
 
-[INSERT CONFUSION MATRIX HERE]
+![graph5](./Images/MVP_RFC_confusionmatrix.png)
 
 DPOY Voting Predictions:
 * Binary RFC with SMOTE Resampling and Hyperparameter Tuning: Test Macro Average Accuracy = 71%
 
-[INSERT CONFUSION MATRIX HERE]
+![graph6](./Images/DPOY_RFC_confusionmatrix.png)
 
 ### Conclusion
 
@@ -83,12 +81,16 @@ My model also revealed the following to be the 5 most important features for pre
 - Win Shares (WS)
 - Free Throw Attemps (FTA)
 
+![graph7](./Images/MVP_RFC_featureimportances.png)
+
 It revealed the following for DPOY voting:
 - Defensive Win Share (DWS)
 - Value Over Replacement Player (VORP)
 - Defensive Box Plus Minus (DBPM)
 - Win Shares (WS)
 - Games Started (GS)
+
+![graph8](./Images/DPOY_RFC_featureimportances.png)
 
 Although there is some overlap between the two models in top 5 feature importances, we do start to see more distinction within the top 10, 15, and 20. 
 
