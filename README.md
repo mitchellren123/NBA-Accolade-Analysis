@@ -33,7 +33,17 @@ I took the following data cleaning steps to prepare for modeling:
 
 With my newly-cleaned dataset, I conductd Exploratory Data Analysis (EDA) to get a better sense for trends in the data. My EDA included plotting time series graphs, measures of central tendancy (box-and-whisker), and scatter plots.
 
-[INSERT EDA GRAPH SAMPLES HERE]
+![graph1](./Images/MVP_OWS_timeseries.png)
+
+![graph2](./Images/DPOY_DWS_timeseries.png)
+
+![graph3](./Images/DPOY_DWS_timeseries.png)
+
+![graph4](./Images/MVP_1991_scatter.png)
+
+![graph5](./Images/MVP_PER_boxandwhisker.png)
+
+
 
 ### Modeling Approach
 
