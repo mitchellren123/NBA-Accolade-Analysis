@@ -12,8 +12,11 @@ This respository relies on data sourced (web-scraped) from Basketball-Reference.
 I've also created an interactive Data Studio dashboard that further supplements my EDA. This dashboard uses the same underlying data and can be found here: https://lookerstudio.google.com/u/0/reporting/20dedf6d-08f4-438f-b041-0b65680f3b06/page/M5iYD
 
 
-### Business And Data Understanding
+### Domain Knowledge
 
+Basketball-Reference.com has been an extremely helpful resource in the making of this project. The website not only includes a plethora of historical NBA data, but it also has explanations about stats, their origins, and their calculations. I've included a table in the Jupyter Notebook that provides this detail.
+
+### Business And Data Understanding
 
 My stakeholder for this project is the National Basketball Association (NBA). Up to this point, there has been little to no transparency offered into the yearly accolade selection process. I feel the NBA has a major opportunity to more clearly-define the accolade selection criteria. In order to help facilitate this process, I will analyze which features have been most important to predicting MVP and DPOY selections historically via classification modeling. The NBA can use this information along with future model predictions to not only establish a selection criteria, but also to supplement media voting with statistical backing.
 
