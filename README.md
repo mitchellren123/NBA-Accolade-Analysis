@@ -97,3 +97,15 @@ Although there is some overlap between the two models in top 5 feature importanc
 My recommendation to the NBA is to use both predictions and feature importances from these two models to form the basis of its objective voting criteria. With a more concrete statistical framework in place for each yearly accolade, the NBA can provide more transparency to fans, players, and media about which players should be considered for each award and why. Media voting members can then overlay narrative distinctions to supplement the statistical analysis.
 
 In addition to solidifying objective criteria, the NBA also has an opportunity to define subjective criteria. For example players coming back from serious injuries, players who demonstrated outstanding leadership qualities, etc. Maintaining some level of subjectivity but more clearly defining the criteria will keep yearly voting fun and interesting. My belief is that fans are interested in both stats and narrative at the end of the day.
+
+
+## Repository Structure
+```
+├── Files <- Webscraped raw datasets
+├── Images <- Data visualizations
+├── NBA-Accolades.ipynb <- Narrative documentation of analysis in Jupyter notebook
+├── README.md <- The top-level README for reviewers of this project
+├── Presentation.pdf <- PDF version of project presentation
+
+```
+
