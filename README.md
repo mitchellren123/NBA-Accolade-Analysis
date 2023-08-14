@@ -106,5 +106,5 @@ In addition to solidifying objective criteria, the NBA also has an opportunity t
 ├── NBA-Accolades.ipynb <- Narrative documentation of analysis in Jupyter notebook
 ├── Presentation.pdf <- PDF version of project presentation
 ├── README.md <- The top-level README for reviewers of this project
-```
+├── Requirements.txt <- Deployment requirements for reproducibility
 
