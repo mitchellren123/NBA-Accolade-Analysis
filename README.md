@@ -8,12 +8,6 @@
 
 This respository seeks to analyze the objectivity of the NBA's yearly award selections - specifically for Most Valuable Player (MVP) and Defensive Player of the year (DPOY). Since these awards are voted on by members of the media, there is a subjective component to the selection process. I am interested to see how closely yearly MVP and DPOY selections align with top performers in various statistical categories. Ultimately I will use a consolidated NBA dataset to build a classification model that learns from past selections to make predictions for future selections.
 
-### Reproducibility
-
-This respository relies on data sourced (web-scraped) from Basketball-Reference.com. You can access CSV files of the data by navigating to the "Files" folder in this respository. Python code within the Jupter Notebook will allow you to access these files directly if you simply clone this respository.
-
-I've also created an interactive Data Studio dashboard that further supplements my EDA. This dashboard uses the same underlying data and can be found here: https://lookerstudio.google.com/u/0/reporting/20dedf6d-08f4-438f-b041-0b65680f3b06/page/M5iYD
-
 
 ### Domain Knowledge
 
@@ -117,4 +111,9 @@ In addition to solidifying objective criteria, the NBA also has an opportunity t
 ├── Presentation.pdf <- PDF version of project presentation
 ├── README.md <- The top-level README for reviewers of this project
 ├── Requirements.txt <- Deployment requirements for reproducibility
+```
+### Reproducibility
 
+This respository relies on data sourced (web-scraped) from Basketball-Reference.com. You can access CSV files of the data by navigating to the "Files" folder in this respository. Python code within the Jupter Notebook will allow you to access these files directly if you simply clone this respository.
+
+I've also created an interactive Data Studio dashboard that further supplements my EDA. This dashboard uses the same underlying data and can be found here: https://lookerstudio.google.com/u/0/reporting/20dedf6d-08f4-438f-b041-0b65680f3b06/page/M5iYD.
