@@ -39,11 +39,19 @@ With my newly-cleaned dataset, I conductd Exploratory Data Analysis (EDA) to get
 
 ![graph1](./Images/MVP_OWS_timeseries.png)
 
+Each time series graph represents a different statistic of interest. These graphs reveal trends in MVP performance over time, such as the increase of 3-point shooting prominence starting in late 2000s.
+
 ![graph2](./Images/DPOY_DWS_timeseries.png)
+
+These graphs are the same as the MVP time series graphs only instead for DPOY. They show interesting defensive statistical differences between guards and big men.
 
 ![graph3](./Images/MVP_1991_scatter.png)
 
+The scatter charts compare MVPS and DPOYs to the rest of the league for a given season. They reveal standout performances and also instances where other players may have had better statistical results than the selected MVP or DPOY for a given combination of metrics.
+
 ![graph4](./Images/MVP_PER_boxandwhisker.png)
+
+The box-and-whisker plots contextualize MVP and DPOY seasonal performance against measures of central tendancy.  
 
 
 
@@ -98,9 +106,15 @@ It revealed the following for DPOY voting:
 
 Although there is some overlap between the two models in top 5 feature importances, we do start to see more distinction within the top 10, 15, and 20. 
 
-My recommendation to the NBA is to use both predictions and feature importances from these two models to form the basis of its objective voting criteria. With a more concrete statistical framework in place for each yearly accolade, the NBA can provide more transparency to fans, players, and media about which players should be considered for each award and why. Media voting members can then overlay narrative distinctions to supplement the statistical analysis.
+My recommendations to the NBA are the following:
 
-In addition to solidifying objective criteria, the NBA also has an opportunity to define subjective criteria. For example players coming back from serious injuries, players who demonstrated outstanding leadership qualities, etc. Maintaining some level of subjectivity but more clearly defining the criteria will keep yearly voting fun and interesting. My belief is that fans are interested in both stats and narrative at the end of the day.
+- Use feature importances from binary RFC models as the basis for establishing an objective voting criteria. This means clearaly defining which statistical categories should be evaluated when selecting MVP and DPOY each year
+- Implement binary RFCs to make future predictions - Use model predictions on future data as a baseline for player eligibility
+- Establish a subjective voting criteria to allow media to incorporate narrative components when voting
+- Share full analysis with fans and players to provide transparency into the accolade selection process
+
+
+The NBA has a great opportunity to enhance its yearly accolade selectioni process. More clearly defining the objective and subjective voting criteria will keep yearly voting fun and interesting while providing more transparency to fans and players.
 
 
 ## Repository Structure
