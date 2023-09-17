@@ -108,13 +108,13 @@ Although there is some overlap between the two models in top 5 feature importanc
 
 My recommendations to the NBA are the following:
 
-- Use feature importances from binary RFC models as the basis for establishing an objective voting criteria. This means clearaly defining which statistical categories should be evaluated when selecting MVP and DPOY each year
+- Use feature importances from binary RFC models as the basis for establishing an objective voting criteria. This means clearly defining which statistical categories should be evaluated when selecting MVP and DPOY each year
 - Implement binary RFCs to make future predictions - Use model predictions on future data as a baseline for player eligibility
 - Establish a subjective voting criteria to allow media to incorporate narrative components when voting
 - Share full analysis with fans and players to provide transparency into the accolade selection process
 
 
-The NBA has a great opportunity to enhance its yearly accolade selectioni process. More clearly defining the objective and subjective voting criteria will keep yearly voting fun and interesting while providing more transparency to fans and players.
+The NBA has a great opportunity to enhance its yearly accolade selection process. More clearly defining the objective and subjective voting criteria will keep yearly voting fun and interesting while providing more transparency to fans and players.
 
 
 ## Repository Structure
